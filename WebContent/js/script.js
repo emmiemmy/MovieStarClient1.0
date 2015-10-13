@@ -1,3 +1,5 @@
+
+
 function print(text){
 	
 	$("#out").append(text);
