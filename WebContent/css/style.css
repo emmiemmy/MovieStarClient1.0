@@ -1,0 +1,39 @@
+@CHARSET "UTF-8";
+
+body{
+	background-color: #f2f2f2;
+	font: 82 arial, helvetica, sans-serif;
+}
+
+#container {
+	width: 300px;
+	height: 200px;
+	margin: 0px, auto;
+}
+
+#out{
+	color: grey;
+	background-color: #ffffff;
+	width: 300px;
+	height: 200px;
+	margin: 0px auto;
+	border: 1px solid #333;
+	overflow: scroll;
+}
+#getdata{
+	width: 303px;
+	height: 30px;
+	margin: 0px, auto;
+
+}
+
+#title{
+	color: white;
+	width: 303px;
+	height: 25px;
+	text-align: center;
+	background-color: #585858;
+	margin-bottom: 3px;
+	padding-top: 5px;
+	border-radius: 5px;
+}
