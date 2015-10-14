@@ -2,19 +2,49 @@
 <html>
 <head>
 <meta http-eqviv="Content-Type" content="text/html" charset="UTF-8">
-<title>JQuery Simple App</title>
-	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-	
-	<script type="text/javascript" src="js/script.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+<title>MovieStar</title>
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<script type="text/javascript" src="js/script.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<embed src="Sound/harpo-moviestar.mp3" width="1" height="1" autostart="true" loop="false" ></embed>
+
 </head>
 <body>
-<div id="container">
-	<div id="title">Simple JQuery App </div>
-	<div id="out"></div>
-	<button id="getdata">Get JSON Data</button>
-</div>
-<footer>
-</footer>
+	<header>
+		<h1>MovieStar</h1>
+	</header>
+
+	<div id="container">
+		<div id="title">Simple JQuery App</div>
+		<div id="out"></div>
+		<button id="getdata">Get JSON Data</button>
+	</div>
+	<footer> </footer>
+
+	<h3>
+		<strong>Välkommen!</strong>
+	</h3>
+
+	<img
+		src="http://www.lawfuel.com/wp-content/uploads/2013/07/movie-star-lawfuel.jpg"
+		alt="Picture of Marilyn Monroe">
+
+	<p>Här kan du söka på en film för att se information och trailer.</p>
+
+	<input type="text" id="myText" value="">
+
+	<button onclick="myFunction() ">OK</button>
+
+	<p id="demo"></p>
+
+	<script>
+		function myFunction() {
+			var x = document.getElementById("myText").value;
+
+			document.getElementById("demo").innerHTML = x;
+		}
+	</script>
 </body>
 </html>
