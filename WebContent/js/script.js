@@ -1,5 +1,6 @@
 
 
+//Hejsan svejsan
 function print(text){
 	
 	$("#out").append(text);
