@@ -1,24 +1,25 @@
+function print(text) {
 
-
-//Hejsan svejsan
-function print(text){
-	
 	$("#out").append(text);
 }
 
+function myFunction() {
+	var x = document.getElementById("myText").value;
 
-$(function(){
-	
-	$("#getdata").click(function(){
-		
+	document.getElementById("demo").innerHTML = x;
+}
+
+$(function() {
+
+	$("#getdata").click(function() {
+
 		$.ajax({
-			type:"GET",
-			url: "http://localhost:8080/moviez/api/collection/Scream",
-			datatype: "text", 
-			success: function(text){
+			type : "GET",
+			url : "http://localhost:8080/moviez/api/collection/Scream",
+			datatype : "text",
+			success : function(text) {
 				print(text);
 			}
 		});
 	});
-	
 });
