@@ -1,6 +1,8 @@
-function print(text) {
+function outputToDocument(jsondata) {
+	
+	
 
-	$("#out").append(text);
+	$("#out").append(jsondata["Plot"]);
 }
 
 function myFunction() {
@@ -9,16 +11,21 @@ function myFunction() {
 	document.getElementById("demo").innerHTML = x;
 }
 
+/**
+ * Function takes the user input and fetches the resource for chosen movie from omdb api
+ */
 $(function() {
 
-	$("#getdata").click(function() {
+	$("#getMovieData").click(function() {
+		
+		var url = "http://localhost:8080/moviez/api/collection/" + $('#myText').val();
 
 		$.ajax({
 			type : "GET",
-			url : "http://localhost:8080/moviez/api/collection/Scream",
-			datatype : "text",
-			success : function(text) {
-				print(text);
+			url : url,
+			datatype : "json",
+			success : function(jsondata) {
+				outputToDocument(jsondata);
 			}
 		});
 	});
