@@ -1,27 +1,25 @@
 @CHARSET "UTF-8";
 
-body{
-	background-color: #f2f2f2;
-	font: 82 arial, helvetica, sans-serif;
+header{
+	text-align:center;
 }
 
 #container {
-	width: 300px;
+	width: 400px;
 	height: 200px;
 	margin: 0px, auto;
 }
 
-#out{
-	color: grey;
-	background-color: #ffffff;
-	width: 300px;
+#movieInfo{
+	
+	width: 600px;
 	height: 200px;
 	margin: 0px auto;
-	border: 1px solid #333;
 	overflow: scroll;
+	font-size: 20px;
 }
-#getdata{
-	width: 303px;
+#getMovieData{
+	width: 100px;
 	height: 30px;
 	margin: 0px, auto;
 
@@ -37,3 +35,45 @@ body{
 	padding-top: 5px;
 	border-radius: 5px;
 }
+body{
+	text-align: center;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	font-size: 2em;
+	text-shadow: 0 0 10px #000;
+	color: #fff;
+	background: #888;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+section{
+	min-height: 100%;
+
+}
+
+h1{
+	font-size: 2em;
+	padding: 0 0.3em;
+	line-height: 1em;
+}
+
+p{
+	padding: 0em;
+}
+
+a{
+	color: #fff;
+}
+
+footer{
+	position: absolute;
+	bottom: 0;
+	font-size: 0.5em;
+}
+
+
+

@@ -1,8 +1,6 @@
 function outputToDocument(jsondata) {
 	
-	
-
-	$("#out").append(jsondata["Plot"]);
+	$("#plotText").append(jsondata["Plot"]);
 }
 
 function myFunction() {
@@ -17,7 +15,7 @@ function myFunction() {
 $(function() {
 
 	$("#getMovieData").click(function() {
-		
+				
 		var url = "http://localhost:8080/moviez/api/collection/" + $('#myText').val();
 
 		$.ajax({
