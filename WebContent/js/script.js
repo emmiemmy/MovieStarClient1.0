@@ -1,5 +1,5 @@
 function outputToDocument(jsondata) {
-	
+	$("#plotText").empty();
 	$("#plotText").append(jsondata["Plot"]);
 }
 
