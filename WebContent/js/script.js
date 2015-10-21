@@ -1,7 +1,13 @@
 function outputToDocument(jsondata) {
-	
+	$("#titelName").empty();
+	$("#actors").empty();
+	$("#plotText").empty();
+	$("#titelName").append(jsondata["Title"]);
+	$("#actors").append(jsondata["Actors"]);
 	$("#plotText").append(jsondata["Plot"]);
+	
 }
+
 
 function myFunction() {
 	var x = document.getElementById("myText").value;
