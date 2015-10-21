@@ -1,6 +1,6 @@
 function outputToDocument(jsondata) {
 	$("#plotText").empty();
-	$("#plotText").append(jsondata["Plot"]);
+	$("#plotText").append("Titel:" + jsondata["Title"] + "\n" + "Handling:" +  jsondata["Plot"]);
 }
 
 function myFunction() {
