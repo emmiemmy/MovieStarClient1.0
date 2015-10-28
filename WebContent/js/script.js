@@ -4,10 +4,12 @@ function outputToDocument(jsondata) {
 	$("#plotText").empty();
 	$("#titelName").append(jsondata["Title"]);
 	$("#actors").append(jsondata["Actors"]);
-	$("#plotText").append(jsondata["Plot"]);
-	
+	$("#plotText").append(jsondata["Plot"]);	
 }
 
+function outputTrailer(jsondata) {
+	$("#trailer").attr("src", jsondata["trailerLink"]);
+}
 
 function myFunction() {
 	var x = document.getElementById("myText").value;
@@ -21,8 +23,10 @@ function myFunction() {
 $(function() {
 
 	$("#getMovieData").click(function() {
+	
 				
 		var url = "http://localhost:8080/moviez/api/collection/" + $('#myText').val();
+		var urlTrailer = "http://localhost:8080/moviez/api/watchtrailer/" + $('#myText').val();
 
 		$.ajax({
 			type : "GET",
@@ -32,5 +36,15 @@ $(function() {
 				outputToDocument(jsondata);
 			}
 		});
+		
+		$.ajax({
+			type : "GET",
+			url : urlTrailer,
+			datatype : "json",
+			success : function(jsondata) {
+				outputTrailer(jsondata);
+			}
+		});
+		
 	});
 });
