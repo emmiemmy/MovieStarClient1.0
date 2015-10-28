@@ -7,8 +7,8 @@
 <script type="text/javascript" src="js/script.js"></script>
 <link rel="stylesheet" type="text/css" href="css/style.css">
 
-<embed src="Sound/harpo-moviestar.mp3" width="1" height="1"
-	autostart="true" loop="false"></embed>
+<!--  <embed src="Sound/harpo-moviestar.mp3" width="1" height="1"
+	autostart="true" loop="false"></embed>-->
 
 </head>
 <body>
@@ -26,6 +26,13 @@
 
 		<button id="getMovieData">OK</button>
 
+
+		<div id="trailerContainer">
+		<iframe id="trailer" width="480" height="270" src=""
+		allowfullscreen="true" webkitallowfullscreen="true"
+		mozallowfullscreen="true" scrolling="no" frameborder="0">
+		</iframe>
+		</div>
 		<div id="movieInfo">
 			<p id="titelName"></p>
 			<br>
@@ -34,13 +41,10 @@
 			<p id="plotText"></p>
 			<br>
 		</div>
-
+		
 
 	</section>
-	<iframe id="trailer" width="480" height="270" src=""
-		allowfullscreen="true" webkitallowfullscreen="true"
-		mozallowfullscreen="true" scrolling="no" frameborder="0"></iframe>
-
+	
 
 
 

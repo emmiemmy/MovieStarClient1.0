@@ -2,6 +2,9 @@ function outputToDocument(jsondata) {
 	$("#titelName").empty();
 	$("#actors").empty();
 	$("#plotText").empty();
+	$("#titelName").append("Titel: ");
+	$("#actors").append("Medverkande: ");
+	$("#plotText").append("Handling: ");	
 	$("#titelName").append(jsondata["Title"]);
 	$("#actors").append(jsondata["Actors"]);
 	$("#plotText").append(jsondata["Plot"]);	
