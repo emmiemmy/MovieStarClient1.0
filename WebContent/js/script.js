@@ -21,11 +21,13 @@ function myFunction() {
 	document.getElementById("demo").innerHTML = x;
 }
 
+
+
 /**
  * Function takes the user input and fetches the resource for chosen movie from omdb api
  */
 $(function() {
-
+	
 	$("#getMovieData").click(function() {
 	
 				
@@ -47,12 +49,10 @@ $(function() {
 			datatype : "json",
 			success : function(jsondata) {
 				if(jsondata  == null){
-					alert("Jag är tom");
-					System.out.println("Ingen länk");
-					$("#trailer").hide();
+					$("#trailer").attr("src", "");
+
 
 				}else{
-					$("#trailer").show();
 					outputTrailer(jsondata);
 				}
 			}
