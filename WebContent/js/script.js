@@ -45,11 +45,12 @@ $(function() {
 			url : urlTrailer,
 			datatype : "json",
 			success : function(jsondata) {
-//				if(jsondata["trailerLink"] == null){
-//					alert("Jag är tom");
-//				}else{
+				if(jsondata["trailerLink"] == null){
+					alert("Jag är tom");
+					System.out.println("Ingen länk");
+				}else{
 					outputTrailer(jsondata);
-//				}
+				}
 			}
 		});
 		
