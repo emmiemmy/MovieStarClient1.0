@@ -11,6 +11,7 @@ function outputToDocument(jsondata) {
 }
 
 function outputTrailer(jsondata) {
+
 	$("#trailer").attr("src", jsondata["trailerLink"]);
 }
 
@@ -45,10 +46,13 @@ $(function() {
 			url : urlTrailer,
 			datatype : "json",
 			success : function(jsondata) {
-				if(jsondata["trailerLink"] == null){
+				if(jsondata  == null){
 					alert("Jag är tom");
 					System.out.println("Ingen länk");
+					$("#trailer").hide();
+
 				}else{
+					$("#trailer").show();
 					outputTrailer(jsondata);
 				}
 			}
