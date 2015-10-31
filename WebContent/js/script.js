@@ -50,7 +50,7 @@ $(function() {
 			success : function(jsondata) {
 				if(jsondata  == null){
 //					$("#trailer").attr("src", "");
-					$("#trailer").attr("src", "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/PM5544_with_non-PAL_signals.png/250px-PM5544_with_non-PAL_signals.png");
+					$("#trailer").attr("src", "http://i.imgur.com/W7mqS78.gif");
 
 
 
