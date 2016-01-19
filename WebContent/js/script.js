@@ -27,6 +27,23 @@ $(document).keypress(function(e) {
 	}
 });
 
+///**
+// * Function that shows information about the API.
+// */
+//$(function getAPI() {
+//
+//	$("#getAPI").click(
+//			function() {
+//
+//				alert("1. \t/api/collection/{movietitle} "
+//						+ "\n- Enter a movie title to get info about a movie \n"
+//						+ "\n2. \t/api/version/check "
+//						+ "\n- To check API version \n"
+//						+ "\n3. \t/api/watchtrailer/{movietitle} "
+//						+ "\n- Fetch trailer for movie");
+//			});
+//});
+
 /**
  * Function that shows information about the API.
  */
@@ -35,14 +52,22 @@ $(function getAPI() {
 	$("#getAPI").click(
 			function() {
 
-				alert("1. \t/api/collection/{movietitle} "
-						+ "\n- Enter a movie title to get info about a movie \n"
-						+ "\n2. \t/api/version/check "
-						+ "\n- To check API version \n"
-						+ "\n3. \t/api/watchtrailer/{movietitle} "
-						+ "\n- Fetch trailer for movie");
+				window.location.assign("http://localhost:8080/MoviezClient/api.html");
 			});
 });
+
+/**
+* Function redirects to the home page
+*/
+$(function getHome() {
+
+	$("#goBack").click(
+			function() {
+
+				window.location.assign("http://localhost:8080/MoviezClient/index.html");
+			});
+});
+
 
 /**
  * Function takes the user input and fetches the resource for chosen movie from
