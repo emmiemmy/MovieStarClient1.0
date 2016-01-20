@@ -52,7 +52,7 @@ $(function getAPI() {
 	$("#getAPI").click(
 			function() {
 
-				window.location.assign("http://localhost:8080/MoviezClient/api.html");
+				window.location.assign("http://localhost:8080/MoviezClient/api4.html");
 			});
 });
 
